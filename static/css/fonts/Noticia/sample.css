@@ -1,0 +1,35 @@
+@font-face
+{
+    font-family: noticia;
+    font-style: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    src: url("NoticiaText-Regular.ttf") format("truetype");
+}
+
+@font-face
+{
+    font-family: noticia;
+    font-style: italic;
+    font-weight: normal;
+    font-stretch: normal;
+    src: url("NoticiaText-Italic.ttf") format("truetype");
+}
+
+@font-face
+{
+    font-family: noticia;
+    font-style: normal;
+    font-weight: bold;
+    font-stretch: normal;
+    src: url("NoticiaText-Bold.ttf") format("truetype");
+}
+
+@font-face
+{
+    font-family: noticia;
+    font-style: italic;
+    font-weight: bold;
+    font-stretch: normal;
+    src: url("NoticiaText-BoldItalic.ttf") format("truetype");
+}

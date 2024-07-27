@@ -1,0 +1,188 @@
+/* CSS Imports */
+@import url("fonts/Charter/sample.css"); /* Charter Font Definitions */
+@import url("fonts/Noticia/sample.css"); /* Noticia Font Definitions */
+@import url("fonts/Noto-Sans/sample.css") /* Noto-Sans Font Definitions */;
+
+/* CSS Global Variables */
+:root
+{
+    /* Colors */
+    --white: #FCFCFC;
+    --teal: #83FFE6;
+    --red: #FF5F5F;
+    --black: #2C2C2C;
+
+    /* Font Families */ 
+    --charter: charter;
+    --noticia: noticia;
+    --noto-sans: noto-sans;
+
+    /* Font Sizes */
+    --font-size-base: 16px;
+    --font-size-sm: 0.875rem;    /* 14px */
+    --font-size-md: 1rem;        /* 16px */
+    --font-size-lg: 1.25rem;     /* 20px */
+    --font-size-xl: 1.5rem;      /* 24px */
+    --font-size-xxl: 2rem;       /* 32px */
+    --font-size-h1: 2.5rem;      /* 40px */
+    --font-size-h2: 2rem;        /* 32px */
+    --font-size-h3: 1.75rem;     /* 28px */
+    --font-size-h4: 1.5rem;      /* 24px */
+    --font-size-h5: 1.25rem;     /* 20px */
+    --font-size-h6: 1rem;        /* 16px */ 
+}
+
+/* General Styles */
+body 
+{
+    font-size: var(--font-size-base);
+}
+
+p 
+{
+    font-size: var(--font-size-mdm);
+}
+
+.sm-text 
+{
+    font-size: var(--font-size-sm);
+}
+
+.lg-text 
+{
+    font-size: var(--font-size-lg);
+}
+
+h1 
+{
+    font-size: var(--font-size-h1);
+}
+
+h2 
+{
+    font-size: var(--font-size-h2);
+}
+
+h3 
+{
+    font-size: var(--font-size-h3);
+}
+
+h4 
+{
+    font-size: var(--font-size-h4);
+}
+
+h5 
+{
+    font-size: var(--font-size-h5);
+}
+
+h6 
+{
+    font-size: var(--font-size-h6);
+}
+
+/* CSS Media Queries */
+/* I'll use the same breakpoints Bootstrap has */
+@media (max-width: 575.98px) {
+    :root {
+        --font-size-base: 14px;
+        --font-size-sm: 0.75rem;      /* 12px */
+        --font-size-md: 0.875rem;     /* 14px */
+        --font-size-lg: 1rem;         /* 16px */
+        --font-size-xl: 1.25rem;      /* 20px */
+        --font-size-xxl: 1.5rem;      /* 24px */
+        --font-size-h1: 2rem;         /* 32px */
+        --font-size-h2: 1.75rem;      /* 28px */
+        --font-size-h3: 1.5rem;       /* 24px */
+        --font-size-h4: 1.25rem;      /* 20px */
+        --font-size-h5: 1rem;         /* 16px */
+        --font-size-h6: 0.875rem;     /* 14px */
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    :root {
+        --font-size-base: 15px;
+        --font-size-sm: 0.8125rem;    /* 13px */
+        --font-size-md: 0.9375rem;    /* 15px */
+        --font-size-lg: 1.125rem;     /* 18px */
+        --font-size-xl: 1.375rem;     /* 22px */
+        --font-size-xxl: 1.75rem;     /* 28px */
+        --font-size-h1: 2.25rem;      /* 36px */
+        --font-size-h2: 2rem;         /* 32px */
+        --font-size-h3: 1.75rem;      /* 28px */
+        --font-size-h4: 1.5rem;       /* 24px */
+        --font-size-h5: 1.25rem;      /* 20px */
+        --font-size-h6: 1rem;         /* 16px */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    :root {
+        --font-size-base: 16px;
+        --font-size-sm: 0.875rem;    /* 14px */
+        --font-size-md: 1rem;        /* 16px */
+        --font-size-lg: 1.25rem;     /* 20px */
+        --font-size-xl: 1.5rem;      /* 24px */
+        --font-size-xxl: 2rem;       /* 32px */
+        --font-size-h1: 2.5rem;      /* 40px */
+        --font-size-h2: 2rem;        /* 32px */
+        --font-size-h3: 1.75rem;     /* 28px */
+        --font-size-h4: 1.5rem;      /* 24px */
+        --font-size-h5: 1.25rem;     /* 20px */
+        --font-size-h6: 1rem;        /* 16px */
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    :root {
+        --font-size-base: 17px;
+        --font-size-sm: 0.9375rem;     /* 15px */
+        --font-size-md: 1.0625rem;     /* 17px */
+        --font-size-lg: 1.3125rem;     /* 21px */
+        --font-size-xl: 1.625rem;      /* 26px */
+        --font-size-xxl: 2.125rem;     /* 34px */
+        --font-size-h1: 2.625rem;      /* 42px */
+        --font-size-h2: 2.125rem;      /* 34px */
+        --font-size-h3: 1.875rem;      /* 30px */
+        --font-size-h4: 1.625rem;      /* 26px */
+        --font-size-h5: 1.3125rem;     /* 21px */
+        --font-size-h6: 1.0625rem;     /* 17px */
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    :root {
+        --font-size-base: 18px;
+        --font-size-sm: 1rem;         /* 16px */
+        --font-size-md: 1.125rem;     /* 18px */
+        --font-size-lg: 1.375rem;     /* 22px */
+        --font-size-xl: 1.75rem;      /* 28px */
+        --font-size-xxl: 2.25rem;     /* 36px */
+        --font-size-h1: 2.75rem;      /* 44px */
+        --font-size-h2: 2.25rem;      /* 36px */
+        --font-size-h3: 2rem;         /* 32px */
+        --font-size-h4: 1.75rem;      /* 28px */
+        --font-size-h5: 1.375rem;     /* 22px */
+        --font-size-h6: 1.125rem;     /* 18px */
+    }
+}
+
+@media (min-width: 1400px) {
+    :root {
+        --font-size-base: 19px;
+        --font-size-sm: 1.0625rem;     /* 17px */
+        --font-size-md: 1.1875rem;     /* 19px */
+        --font-size-lg: 1.4375rem;     /* 23px */
+        --font-size-xl: 1.875rem;      /* 30px */
+        --font-size-xxl: 2.375rem;     /* 38px */
+        --font-size-h1: 2.875rem;      /* 46px */
+        --font-size-h2: 2.375rem;      /* 38px */
+        --font-size-h3: 2.125rem;      /* 34px */
+        --font-size-h4: 1.875rem;      /* 30px */
+        --font-size-h5: 1.4375rem;     /* 23px */
+        --font-size-h6: 1.1875rem;     /* 19px */
+    }
+}
