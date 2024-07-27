@@ -32,10 +32,49 @@
     --font-size-h6: 1rem;        /* 16px */ 
 }
 
+/* Global Styles */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* General Styles */
 body 
 {
     font-size: var(--font-size-base);
+    width: 100vw;
+    height: 100vh;
+}
+
+.home-grid
+{
+    display: grid;
+    grid-template-areas:
+    "h h h h h h h h h h h h"
+    "s s s m m m m m m m m m"
+    "f f f f f f f f f f f f";
+}
+
+.home-header
+{
+    grid-area: "h";
+}
+
+.home-sidebar
+{
+    grid-area: "s";
+}
+
+.home-main
+{
+    grid-area: "m";
+}
+
+.home-footer
+{
+    grid-area: "f"
 }
 
 p 
