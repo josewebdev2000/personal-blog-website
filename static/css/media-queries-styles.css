@@ -70,6 +70,24 @@
     {
         text-align: center;
     }
+
+    .nav, .nav-ul
+    {
+        align-items: center;
+    }
+}
+
+@media (min-width: 992px)
+{
+    .nav-link
+    {
+        margin-left: 100px;
+    }
+
+    .nav-btn
+    {
+        margin-left: 75px;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {

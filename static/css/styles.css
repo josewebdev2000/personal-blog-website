@@ -10,6 +10,8 @@
     --white: #FCFCFC;
     --teal: #83FFE6;
     --red: #FF5F5F;
+    --red1: rgba(233, 155, 155, 0.496);
+    --red2: rgba(236, 21, 21, 0.448);
     --black: #2C2C2C;
 
     /* Font Families */ 
@@ -139,9 +141,96 @@ h6
     font-size: var(--font-size-h6);
 }
 
+/* Header Section */
 .logo
 {
     width: 25vw;
     max-width: 300px;
     min-width: 150px;
+}
+
+/* Sidebar Section */
+.nav, .nav-ul
+{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.nav-ul
+{
+    justify-content: center;
+    list-style-type: none;
+}
+
+.nav-li
+{
+    margin: 10px;
+}
+
+.nav-link
+{
+    font-size: var(--font-size-lg);
+}
+
+.nav-link
+{
+    font-family: var(--noto-sans);
+    color: var(--black);
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link:hover
+{
+    color: var(--red);
+}
+
+.nav-btn
+{
+    text-transform: uppercase;
+    padding: 10px;
+    padding-right: 25px;
+    padding-left: 25px;
+    cursor: pointer;
+    border-radius: 15px;
+    border: 3px solid var(--red);
+    font-size: var(--font-size-md);
+    font-family: var(--noto-sans);
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-btn-normal
+{
+    background-color: var(--red);
+    color: var(--white);
+}
+
+.nav-btn-normal:hover
+{
+    background-color: var(--white);
+    color: var(--red);
+    border: 3px solid var(--red);
+}
+
+.nav-btn-normal:active
+{
+    background-color: var(--red1);
+}
+
+.nav-btn-inversed
+{
+    background-color: var(--white);
+    color: var(--red);
+}
+
+.nav-btn-inversed:hover
+{
+    background-color: var(--red);
+    color: var(--white);
+}
+
+.nav-btn-inversed:active
+{
+    background-color: var(--red2);
 }
