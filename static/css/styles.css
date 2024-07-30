@@ -13,6 +13,8 @@
     --red1: rgba(233, 155, 155, 0.496);
     --red2: rgba(236, 21, 21, 0.448);
     --black: #2C2C2C;
+    --black1: rgba(0,0,0,0.7);
+    --black2: rgba(0,0,0,0.4);
 
     /* Font Families */ 
     --charter: charter;
@@ -93,7 +95,11 @@ body
 
 .home-footer
 {
+    background-color: var(--red);
     grid-area: f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 p 
@@ -233,4 +239,31 @@ h6
 .nav-btn-inversed:active
 {
     background-color: var(--red2);
+}
+
+/* Main Section */
+
+/* Footer Section */
+.footer-copyright
+{
+    font-size: var(--font-size-md);
+    color: var(--white);
+    font-family: var(--noticia);
+}
+
+.copyright-link
+{
+    text-decoration: none;
+    color: var(--white);
+    transition: color 0.3s;
+}
+
+.copyright-link:hover
+{
+    color: var(--black1);
+}
+
+.copyright-link:active
+{
+    color: var(--black2);
 }
