@@ -16,6 +16,9 @@
     <!--Page Title-->
     <title>Jose Codes | Home</title>
 
+    <!--Favicon-->
+    <link rel="shortcut icon" href="static/pics/favicon.ico" type="image/x-icon">
+
     <!--CSS StyleSheets-->
     <link rel="stylesheet" href="static/css/styles.css">
     <link rel="stylesheet" href="static/css/media-queries-styles.css">
@@ -23,7 +26,9 @@
 </head>
 <body class="home-grid">
     <header class="home-header">
-        <img class="logo" src="static/pics/jose-codes-logo.png" alt="Jose Codes Blog Logo">
+        <a href="index.html">
+            <img class="logo" src="static/pics/jose-codes-logo.png" alt="Jose Codes Blog Logo">
+        </a>
     </header>
     <aside class="home-sidebar">
         <nav class="nav">
@@ -37,7 +42,45 @@
         </nav>
     </aside>
     <main class="home-main">
-        Main
+        <section class="main-headline-container">
+            <h4 class="main-headline">All you need to know about coding, web development, server hosting, and more</h4>
+        </section>
+        <section class="cards-container h-100">
+            <article class="card">
+                <h5 class="card-title"><a href="static/pages/free-hosting.html" class="card-link">Hosting Free Web Apps for Developers: Your Essential Toolkit</a></h5>
+                <figure class="card-figure">
+                    <img class="card-img" src="static/pics/free-web-hosting.jpg" alt="Card Img">
+                    <figcaption class="card-description">Learn where to find free hosting</figcaption>
+                </figure>
+                <p class="card-summary">
+                    Are you a web developer tired of the endless search for free web hosting services online? 
+                    <br><br>
+                    In this guide, you'll be led through a plethora of free web hosting services, covering front-end, back-end, and database technologies.
+                </p>
+            </article>
+            <article class="card">
+                <h5 class="card-title"><a href="static/pages/email-sending.html" class="card-link">Gmail Email Service Setup for Code-Based Email Sending</a></h5>
+                <figure class="card-figure">
+                    <img class="card-img" src="static/pics/email.png" alt="Card Img">
+                    <figcaption class="card-description">Configure Gmail to send emails with code</figcaption>
+                </figure>
+                <p class="card-summary">In this post, be guided through the process of setting up Gmail’s SMTP service in order to have the knowledge to send emails programmatically using your Gmail account.
+                    <br><br>
+                    Use any programming language of your choice to send emails using Gmail’s SMTP server. Whether you use Python, JavaScript, PHP, C#, Ruby, or Go. 
+                    <br><br>
+                    Start sending emails with code.
+                </p>
+            </article>
+            <article class="card">
+                <h5 class="card-title"><a href="static/pages/kill-php.html" class="card-link">Why do you want to kill PHP?</a></h5>
+                <figure class="card-figure">
+                    <img class="card-img" src="static/pics/sad-elephpant.png" alt="Card Img">
+                    <figcaption class="card-description">PHP is a widely hated programming language</figcaption>
+                </figure>
+                <p class="card-summary">Back-End Web Development has evolved a lot over these years. Indeed, we have Node.js, Django, ASP.NET, and even Go taking over. Hence, it seems everyone is fascinated for the definitive death of PHP.</p>
+                <p class="card-summary">However, should we really get rid of PHP forever and ever by throwing it to the fiery lake of burning sulfur? I don't think so. PHP is here to stand and the gates of oblivion shall not stand against it.</p>
+            </article>
+        </section>
     </main>
     <footer class="home-footer">
         <h3 class="footer-copyright">Website Created By <a href="https://github.com/josewebdev2000" target="_blank" class="copyright-link">@josewebdev2000</a></h3>
