@@ -1,6 +1,6 @@
 @media (max-width: 991.98px)
 {
-    .home-grid
+    .post-grid
     {
         display: grid;
         grid-template-areas:
@@ -13,7 +13,7 @@
         "f";
     }
 
-    .home-header
+    .post-header
     {
         text-align: center;
     }
@@ -32,19 +32,6 @@
     .card
     {
         margin: 20px;
-    }
-
-    .main-headline-container
-    {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 30px;
-    }
-
-    .main-headline
-    {
-        text-align: center;
     }
 }
 
