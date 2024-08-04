@@ -1,0 +1,62 @@
+@media (max-width: 991.98px)
+{
+    .home-grid
+    {
+        display: grid;
+        grid-template-areas:
+        "h"
+        "s"
+        "s"
+        "m"
+        "m"
+        "f"
+        "f";
+    }
+
+    .home-header
+    {
+        text-align: center;
+    }
+
+    .nav, .nav-ul
+    {
+        align-items: center;
+    }
+
+    .cards-container
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card
+    {
+        margin: 20px;
+    }
+
+    .main-headline-container
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+    }
+
+    .main-headline
+    {
+        text-align: center;
+    }
+}
+
+@media (min-width: 992px)
+{
+    .nav-btn
+    {
+        margin-left: 30px;
+    }
+
+    .nav-link
+    {
+        margin-left: 0px;
+    }
+}

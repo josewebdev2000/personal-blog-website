@@ -1,0 +1,70 @@
+.post-grid
+{
+    display: grid;
+    grid-template-areas:
+    "h h h h h h h h h h h h"
+    "s s m m m m m m m m m m"
+    "s s m m m m m m m m m m"
+    "s s m m m m m m m m m m"
+    "f f f f f f f f f f f f"
+    "f f f f f f f f f f f f"
+    "f f f f f f f f f f f f";
+}
+
+.post-header
+{
+    grid-area: h;
+    padding: 2rem;
+}
+
+.post-sidebar
+{
+    grid-area: s;
+}
+
+.post-main
+{
+    grid-area: m;
+}
+
+.nav-ul
+{
+    align-items: center;
+}
+
+.post-avatar
+{
+    width: 250px;
+    border-radius: 50%;
+    border: 20px double var(--red);
+}
+
+.author-name
+{
+    font-family: var(--charter);
+    font-size: var(--font-size-md);
+}
+
+.job-title
+{
+    font-family: var(--noticia);
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.short-bio
+{
+    font-family: var(--charter);
+    font-style: italic;
+    font-size: var(--font-size-sm);
+}
+
+.post-footer
+{
+    grid-area: f;
+    background-color: var(--red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}

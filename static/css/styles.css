@@ -36,6 +36,11 @@
     --font-size-h6: 1rem;        /* 16px */ 
 }
 
+.text-center
+{
+    text-align: center;
+}
+
 /* Global Styles */
 *
 {
