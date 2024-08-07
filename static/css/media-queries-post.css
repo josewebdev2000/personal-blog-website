@@ -1,4 +1,33 @@
-@media (max-width: 991.98px)
+@media (max-width: 565px)
+{
+    .post-grid
+    {
+        display: grid;
+        grid-template-areas:
+        "h"
+        "s"
+        "s"
+        "m"
+        "m"
+        "f"
+        "f";
+    }
+
+    .main-headline-container
+    {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .nav
+    {
+        align-items: flex-start;
+    }
+}
+
+@media (min-width: 566px) and (max-width: 991.98px)
 {
     .post-grid
     {
@@ -23,15 +52,18 @@
         align-items: center;
     }
 
-    .cards-container
+    .main-headline-container
     {
-        flex-direction: column;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
         align-items: center;
+        padding: 30px;
     }
 
-    .card
+    .main-headline
     {
-        margin: 20px;
+        text-align: center;
     }
 }
 
