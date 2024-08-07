@@ -122,6 +122,7 @@ body
     background-color: var(--red);
     grid-area: f;
     display: flex;
+    flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
     padding: 50px;
@@ -348,6 +349,29 @@ h6
 }
 
 /* Footer Section */
+.social-icons
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.social-icon-link
+{
+    font-family: var(--noto-sans);
+    color: var(--white);
+    text-decoration: none;
+    transition: color 0.5s; 
+}
+
+.social-icon-link:hover
+{
+    color: var(--black);
+}
+
 .footer-copyright
 {
     font-size: var(--font-size-md);

@@ -77,9 +77,9 @@ body
 {
     margin-top: 20px;
     padding: 5px;
-    width: 40vw;
+    width: 30vw;
     min-width: 200px;
-    max-width: 400px;
+    max-width: 350px;
 }
 
 .post-footer
@@ -87,6 +87,7 @@ body
     grid-area: f;
     background-color: var(--red);
     display: flex;
+    flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
     padding: 50px;
